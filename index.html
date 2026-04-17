@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Alex Rivera</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="profile-header">
+        <figure class="avatar-figure">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+            alt="Headshot of Alex Rivera, Software Engineer"
+            class="avatar-img"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <div>
+          <h2 class="name-heading" data-testid="test-user-name">Alex Rivera</h2>
+          <p class="bio-text" data-testid="test-user-bio">
+            Full-stack developer with a passion for clean code and minimalist
+            design. I build accessible digital products that solve real-world
+            problems.
+          </p>
+        </div>
+      </header>
+
+      <div class="time-display">
+        <span class="time-label">Current Time</span>
+        <span
+          class="time-value"
+          data-testid="test-user-time"
+          aria-live="polite"
+        >
+        </span>
+      </div>
+
+      <nav class="social-nav" data-testid="test-user-social-links">
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          data-testid="test-user-social-github"
+          >GitHub</a
+        >
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          data-testid="test-user-social-linkedin"
+          >LinkedIn</a
+        >
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          data-testid="test-user-social-twitter"
+          >Twitter</a
+        >
+      </nav>
+
+      <div class="lists-grid">
+        <section class="list-section" data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul class="custom-list">
+            <li>Mechanical Keyboards</li>
+            <li>Street Photography</li>
+            <li>Rock Climbing</li>
+          </ul>
+        </section>
+
+        <section class="list-section" data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul class="custom-list">
+            <li>Unlabeled Input Fields</li>
+            <li>Slow Build Times</li>
+            <li>Loud Environments</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+    <script src="./script.js"></script>
+  </body>
+</html>
